@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fakturownia/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fakturownia"
+  spec.name          = "fakturownia_api"
   spec.version       = Fakturownia::VERSION
   spec.authors       = ["Sebastian Wojtczak"]
   spec.email         = ["wojtczaksebastian@gmail.com"]
