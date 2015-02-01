@@ -1,6 +1,6 @@
 # Fakturownia
 
-TODO: Write a gem description
+Ruby wrapper around API of invoice service fakturownia.pl
 
 ## Installation
 

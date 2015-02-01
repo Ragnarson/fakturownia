@@ -1,5 +1,6 @@
 require "fakturownia/version"
-
-module Fakturownia
-  # Your code goes here...
-end
+require "fakturownia/errors"
+require "fakturownia/client"
+require "fakturownia/connection"
+require "fakturownia/api/base"
+require "fakturownia/api/invoice"
