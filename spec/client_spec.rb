@@ -19,4 +19,11 @@ describe Fakturownia::Client do
       subject.invoice
     end
   end
+
+  describe '#invoices' do
+    it 'is an alias of #invoice' do
+      expect(subject.invoices).to be_instance_of(subject.invoice.class)
+      expect(subject.invoices.client).to be(subject.invoice.client)
+    end
+  end
 end
