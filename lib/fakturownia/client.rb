@@ -12,5 +12,6 @@ module Fakturownia
     def invoice
       Fakturownia::Api::Invoice.new(self)
     end
+    alias_method :invoices, :invoice
   end
 end
