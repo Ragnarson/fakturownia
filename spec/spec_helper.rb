@@ -1,5 +1,6 @@
 require 'fakturownia'
 require 'fakeweb'
+require 'webmock/rspec'
 
 FakeWeb.allow_net_connect = false
 

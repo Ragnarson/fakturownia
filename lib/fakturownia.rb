@@ -2,5 +2,8 @@ require "fakturownia/version"
 require "fakturownia/errors"
 require "fakturownia/client"
 require "fakturownia/connection"
+require 'fakturownia/default_crud'
 require "fakturownia/api/base"
 require "fakturownia/api/invoice"
+require 'fakturownia/api/product'
+require 'fakturownia/api/client'
