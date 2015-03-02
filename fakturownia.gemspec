@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shelly Cloud team"]
   spec.email         = ["devs@shellycloud.com"]
   spec.summary       = %q{Ruby API for invoicing service fakturownia.pl}
-  spec.description   = %q{fakturownia.pl api client}
+  spec.description   = %q{Ruby API for invoicing service Fakturownia. Pay attention, it is an informal wrapper.}
   spec.homepage      = "https://github.com/shellycloud/fakturownia"
   spec.license       = "MIT"
 
