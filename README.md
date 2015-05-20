@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Create a client with `api_token` and `subdomain`:
 
-    client = Fakturowania::Client.new(api_token: 'YOUR_TOKEN', subdomain: 'YOUR_DOMAIN')
+    client = Fakturownia::Client.new(api_token: 'YOUR_TOKEN', subdomain: 'YOUR_DOMAIN')
 
 
 ### Invoices
