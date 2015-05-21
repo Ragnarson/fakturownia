@@ -9,9 +9,19 @@ module Fakturownia
         raise(ArgumentError.new('api_token is required'))
     end
 
-    def invoice
+    def invoices
       Fakturownia::Api::Invoice.new(self)
     end
-    alias_method :invoices, :invoice
+    alias_method :invoice, :invoices
+
+    def products
+      Fakturownia::Api::Product.new(self)
+    end
+    alias_method :product, :products
+
+    def clients
+      Fakturownia::Api::Client.new(self)
+    end
+    alias_method :client, :clients
   end
 end

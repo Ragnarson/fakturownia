@@ -47,9 +47,25 @@ Download invoice as PDF
     client.invoice.show(id, format: :pdf)
 
 
-## TODO
+You can use singular `client.invoice` or plural method names `client.invoices`.
 
-Currently only invoice resource is supported.
+Other supported resources are products:
+```ruby
+client.products.create(name: 'example name', price_net: 100)
+client.products.show(id)
+client.products.update(id, { name: 'new name' })
+client.products.delete(id)
+client.products.list
+```
+
+and clients (your customers):
+```ruby
+client.clients.create(name: 'example name', email: 'example@email.com')
+client.clients.show(id)
+client.clients.update(id, { name: 'new name' })
+client.clients.delete(id)
+client.clients.list
+```
 
 ## Contributing
 
