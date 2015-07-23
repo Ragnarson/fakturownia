@@ -46,6 +46,10 @@ Download invoice as PDF
 
     client.invoice.show(id, format: :pdf)
 
+Change invoice state
+
+    client.invoice.change_status(id, 'paid')
+
 
 ## TODO
 

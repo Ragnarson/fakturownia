@@ -20,6 +20,11 @@ module Fakturownia
       def delete(id)
         connection.delete("/invoices/#{id}")
       end
+
+      def change_status(id, status)
+        connection.post("/invoices/#{id}/change_status",
+          invoice: {status: status})
+      end
     end
   end
 end

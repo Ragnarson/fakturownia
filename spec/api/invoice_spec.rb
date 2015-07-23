@@ -41,4 +41,12 @@ describe Fakturownia::Api::Invoice do
       subject.delete(123)
     end
   end
+
+  describe "#change_status" do
+    it "should perform POST request on connection at /invoices/ID/change_status" do
+      expect(connection).to receive(:post).with('/invoices/123/change_status',
+        invoice: {status: 'paid'})
+      subject.change_status(123, 'paid')
+    end
+  end
 end
